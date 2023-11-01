@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pl">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="icon" type="image/x-icon" href="assets/favicon.webp">
+		<link rel="stylesheet" href="css/style.css">
+		<title>Media Janik | Sklep internetowy</title>
+	</head>
+
+	<body>
+		<header class="header">
+			<a class="header__title-link" href="/">
+				<h1 class="header__title">
+					<span class="header__title--yellow">media</span>
+					<span class="header__title--white">janik</span>
+					<span class="header__title--mark">&#x25BA;</span>
+				</h1>
+			</a>
+
+			<div class="header__search-bar search-bar">
+				<input class="search-bar__input" id="search-bar-input" type="text" placeholder="Wyszukaj w sklepie..." autocomplete="off">
+				<div class="search-bar__icon">
+					<img class="search-bar__image" src="assets/lupa.svg" alt="Ikonka lupy">
+				</div>
+			</div>
+
+			<div class="header__basket">
+				<img src="assets/shopping-cart.svg" alt="Ikonka koszyka">
+				<span class="header__basket-amount">Koszyk</span>
+				<button class="header__basket-clear-button">X</button>
+			</div>
+		</header>
+
+		<main class="container">
+			<aside class="categories">
+				<h2 class="categories__title">Kategorie</h2>
+				<ul class="categories__list"></ul>
+			</aside>
+
+			<section class="products"></section>
+
+			<p class="empty-state">Nie znaleziono żadnego produktu...</p>
+		</main>
+
+		<script type="module" src="js/app.js"></script>
+	</body>
+</html>
